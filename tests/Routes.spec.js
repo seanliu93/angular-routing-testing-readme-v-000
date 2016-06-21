@@ -16,4 +16,13 @@ describe('Routes', function () {
 			expect(state.url).toEqual('/settings');
 		});
 	});
+
+	describe('Settings/User', function() {
+		var state;
+
+		it('should have the correct URL', function () {
+			state = $state.get('settings.user');
+			expect(state.url).toEqual('/user');
+		});
+	});
 });
